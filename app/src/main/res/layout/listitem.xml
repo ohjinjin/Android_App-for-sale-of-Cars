@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image"
+        android:layout_toRightOf="@+id/image"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <TableRow
+        android:id="@+id/tr1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/image">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="판매자"
+            android:textColor="#777777"
+            android:textSize="11dip" />
+
+        <TextView
+            android:id="@+id/sellerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="name"
+            android:textSize="11dip" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="연락처"
+            android:textColor="#777777"
+            android:textSize="11dip" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="phone"
+            android:textSize="11dip" />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tr2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tr1"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/image">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="판매금액"
+            android:textColor="#777777"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0만원"
+            android:textColor="#FF0000"
+            android:textSize="15dip" />
+
+    </TableRow>
+    <TextView
+        android:id="@+id/callSellerInterface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tr2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#009944"
+        android:text="상세 스펙 보기"
+        android:layout_weight="1"
+        android:textSize="11dip" />
+
+</RelativeLayout>
